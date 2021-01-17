@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="672.0" style="-fx-background-color: #008B8B;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ro.mta.facc.selab.weatherapp.controller.Controller">
+    <children>
+        <Button fx:id="id_cauta" layoutX="154.0" layoutY="375.0" mnemonicParsing="false" onMouseClicked="#cauta" prefHeight="25.0" prefWidth="77.0" text="Cauta" />
+        <Label fx:id="temp" layoutX="199.0" layoutY="98.0" prefHeight="27.0" prefWidth="67.0" style="-fx-background-color: #ADD8E6;" textAlignment="CENTER" textFill="#090909">
+            <font>
+                <Font name="Book Antiqua Bold" size="13.0" />
+            </font>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+        </Label>
+        <Label fx:id="windSp" layoutX="199.0" layoutY="153.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #ADD8E6;" textFill="#030303">
+            <font>
+                <Font name="Book Antiqua Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="Oras" layoutX="274.0" layoutY="26.0" prefHeight="39.0" prefWidth="142.0" style="-fx-background-color: #ADD8E6;" textAlignment="CENTER">
+            <font>
+                <Font name="Book Antiqua Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="id_temp" layoutX="172.0" layoutY="167.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <Label fx:id="id_umiditate" layoutX="148.0" layoutY="202.0">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="id_tara" layoutX="22.0" layoutY="309.0" onMouseClicked="#taraC" prefWidth="150.0" promptText="Choose Country" />
+        <ComboBox fx:id="id_oras" layoutX="204.0" layoutY="309.0" onMouseClicked="#orasC" prefWidth="150.0" promptText="Choose City" />
+      <TextField layoutX="65.0" layoutY="98.0" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #ADD8E6;" text="Temperatura:">
+         <font>
+            <Font name="Book Antiqua Bold" size="13.0" />
+         </font></TextField>
+      <TextField layoutX="65.0" layoutY="153.0" prefHeight="27.0" prefWidth="117.0" style="-fx-background-color: #ADD8E6;" text="Viteza vantului:">
+         <font>
+            <Font name="Book Antiqua Bold" size="13.0" />
+         </font></TextField>
+      <TextField layoutX="417.0" layoutY="98.0" prefHeight="27.0" prefWidth="92.0" style="-fx-background-color: #ADD8E6;" text="Precipitatii:">
+         <font>
+            <Font name="Book Antiqua Bold" size="13.0" />
+         </font></TextField>
+      <Label fx:id="Precipitatii" layoutX="536.0" layoutY="98.0" prefHeight="27.0" prefWidth="99.0" style="-fx-background-color: #ADD8E6;" textAlignment="CENTER">
+         <font>
+            <Font name="Book Antiqua Bold" size="13.0" />
+         </font></Label>
+      <Label fx:id="Descriere" layoutX="426.0" layoutY="147.0" prefHeight="39.0" prefWidth="207.0" style="-fx-background-color: #ADD8E6;" textAlignment="CENTER" textFill="#191919">
+         <font>
+            <Font name="Book Antiqua Bold" size="14.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
